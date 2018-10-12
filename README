@@ -1,7 +1,7 @@
-sudo apt install -t stretch-backports dconf-cli uuid-runtime
+sudo apt install -y -t stretch-backports dconf-cli uuid-runtime
 wget -O gogh https://git.io/vQgMr && chmod +x gogh && ./gogh && rm gogh
 
-sudo apt install -t stretch-backports nvim
+sudo apt install -y -t stretch-backports neovim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 update-alternatives --config vi
@@ -49,7 +49,7 @@ sudo mkdir -p /usr/local/share/fonts/source-code-pro
 sudo unzip ~/Downloads/SourceCodePro.zip -d /usr/local/share/fonts/source-code-pro
 sudo fc-cache -fv /usr/local/share/fonts/source-code-pro
 
-sudo apt install -t stretch-backports tmux
+sudo apt install -y -t stretch-backports tmux
 mkdir -p ~/.config/tmux/colors
 cat >> ~/.config/tmux/colors/gruvbox.conf << EOF
 # This tmux statusbar config was created by tmuxline.vim
